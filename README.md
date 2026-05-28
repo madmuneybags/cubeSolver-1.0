@@ -3,7 +3,7 @@ The first iteration of the 3x3 Puzzle (Rubik's Cube) Solver. This utilized an ST
 
 ## Overview
 
-This project was done for a microcontroller course's final project. The majority of the program lived on the STM32, while the ESP32 simply was used to send and receive data from a webserver.
+This project was written in C/C++. The majority of the program lived on the STM32, while the ESP32 simply was used to send and receive data from a webserver.
 
 The STM32 sends the cube state to the ESP32 via UART. The ESP sends the cube state to a webserver, waits for the response, and then returns the solution to the cube back to the STM32 via UART. The STM32 then handles the decoding of the solution into motor rotations. 
 
